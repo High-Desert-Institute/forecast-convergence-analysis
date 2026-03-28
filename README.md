@@ -1,4 +1,6 @@
 ﻿# Forecast Convergence Analysis Monorepo
+ A monorepo centered on a pipeline that ingests and analyzes evolving forecast claims into standardized artifacts, with a website and a local TUI that both expose convergence, provenance, and verification insights.  
+
 
 ## Overview
 Forecast Convergence Analysis is one analytical technique implemented and exposed through three packages in one monorepo:
