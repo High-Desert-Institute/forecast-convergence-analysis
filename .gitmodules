@@ -1,3 +1,8 @@
 [submodule "agents"]
 	path = agents
 	url = https://github.com/cjtrowbridge/agents.git
+[submodule "packages/data"]
+	path = packages/data
+	url = https://github.com/High-Desert-Institute/forecast-retrospective.git
+	update = none
+	ignore = all

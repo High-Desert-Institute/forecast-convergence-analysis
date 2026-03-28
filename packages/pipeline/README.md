@@ -58,4 +58,7 @@ Data source strategy and detailed inventories are maintained in:
 - [`../../docs/pipeline/data-sources.md`](../../docs/pipeline/data-sources.md)
 - [`../../docs/pipeline/detailed-technique-reference.md`](../../docs/pipeline/detailed-technique-reference.md)
 
+Optional local archive input:
+- `../data` (git submodule; initialize only when historical backfill analysis is needed)
+
 These docs preserve the full detailed source and methodological framing from the pre-monorepo README.

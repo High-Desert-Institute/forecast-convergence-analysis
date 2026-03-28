@@ -24,7 +24,8 @@ forecast-convergence-analysis/
 |-- packages/
 |   |-- pipeline/   # Python ingestion + normalization + analysis + artifact generation
 |   |-- site/       # Static website that renders published artifacts
-|   `-- tui/        # Terminal interface for local execution and inspection
+|   |-- tui/        # Terminal interface for local execution and inspection
+|   `-- data/       # Optional submodule with historical forecast archive
 |-- docs/
 |   `-- pipeline/   # Detailed method and source reference material
 |-- config/
@@ -122,9 +123,23 @@ Detailed source inventories and long-form source analysis are maintained in pack
 3. Site build workflow ingests those artifacts and renders static outputs.
 4. TUI uses local artifacts for execution, inspection, and operator analysis.
 
+## Optional Historical Archive Submodule
+The historical retrospective archive lives in a separate repository and is linked as the optional submodule `packages/data`.
+
+- default clone users do not need it for normal development
+- archive contents and commit history remain in its own repository
+- this repo tracks only the submodule pointer
+
+Initialize only when needed:
+
+```bash
+git submodule update --init --recursive packages/data
+```
+
 ## Further Documentation
 - Pipeline package docs: [`packages/pipeline/README.md`](packages/pipeline/README.md)
 - Pipeline detailed docs index: [`docs/pipeline/README.md`](docs/pipeline/README.md)
 - Site package docs: [`packages/site/README.md`](packages/site/README.md)
 - TUI package docs: [`packages/tui/README.md`](packages/tui/README.md)
+- Optional historical archive package (submodule): [`packages/data/README.md`](packages/data/README.md)
 - Full pre-monorepo detailed reference preserved at [`docs/pipeline/detailed-technique-reference.md`](docs/pipeline/detailed-technique-reference.md)
